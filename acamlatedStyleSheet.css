@@ -32,3 +32,23 @@
 {
     scale: 150%;
 }
+
+.acamlatedMarginLeft
+{
+    margin-left: 16px;
+}
+
+.acamlatedMarginRight
+{
+    margin-right: 16px;
+}
+
+.acamlatedMarginTop
+{
+    margin-top: 16px;
+}
+
+.acamlatedMarginBottom
+{
+    margin-bottom: 16px;
+}
