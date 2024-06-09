@@ -13,7 +13,7 @@
     </style>
     <script src="acamlatedScripts.js"></script>
 </head>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<body onload="checkProjectFilters()" class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="sidebar"><br>
@@ -46,141 +46,260 @@
         <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="openSidebar()"><i class="fa fa-bars"></i></span>
         <div class="w3-container">
             <h1><b>Calvin Oktavialdy Setia</b></h1>
-            <div class="w3-section w3-bottombar">
+            <div style="padding-bottom: 16px" class="w3-section w3-bottombar">
                 <h4><b>Projects</b></h4>
+                <span class="w3-margin-right">Filter:</span>
+                <button id="filterButton0" onclick="selectFilter(Filters.All)" class="w3-button w3-black">ALL</button>
+                <button id="filterButton1" onclick="selectFilter(Filters.Unity)" class="w3-button w3-white">Unity</button>
+                <button id="filterButton2" onclick="selectFilter(Filters.Unreal)" class="w3-button w3-white">Unreal Engine</button>
+                <button id="filterButton3" onclick="selectFilter(Filters.Personal)" class="w3-button w3-white">Personal Projects</button>
+                <button id="filterButton4" onclick="selectFilter(Filters.University)" class="w3-button w3-white">University Projects</button>
+                <button id="filterButton5" onclick="selectFilter(Filters.CSharp)" class="w3-button w3-white">C#</button>
+                <button id="filterButton6" onclick="selectFilter(Filters.CPlusPlus)" class="w3-button w3-white">C++</button>
+                <button id="filterButton7" onclick="selectFilter(Filters.Python)" class="w3-button w3-white">Python</button>
+                <button id="filterButton8" onclick="selectFilter(Filters.JavaScript)" class="w3-button w3-white">JavaScript</button>
             </div>
         </div>
     </header>
 
-    <!-- First Page-->
-    <!-- First Photo Grid Row-->
+    <!-- Grid -->
     <div class="w3-row-padding">
-        <div onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page0">
+        <div id="project0" onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class2">
             <div class="acamlatedScaleImg">
                 <img src="acamlated-White-Background.png">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 1 Unity Unreal</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
 
-        <div onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page0">
+        <div id="project1" onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class3">
             <div class="acamlatedScaleImg">
                 <img src="school-solid.svg">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 2 Unity Personal</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
 
-        <div onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page0">
+        <div id="project2" onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class4">
             <div class="acamlatedScaleImg">
                 <img src="acamlated-White-Background.png">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 3 Unity University</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
-    </div>
 
-    <!-- Second Photo Grid Row-->
-    <div class="w3-row-padding">
-        <div onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page0">
+        <div id="project3" onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class5">
             <div class="acamlatedScaleImg">
                 <img src="acamlated-White-Background.png">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 4 Unity CSharp</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
 
-        <div onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page0">
+        <div id="project4" onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class6">
             <div class="acamlatedScaleImg">
                 <img src="school-solid.svg">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 5 Unity CPlusPlus</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
 
-        <div onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page0">
+        <div id="project5" onclick="openProjectDetails(document.getElementById('menu'))" style="display: block" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class7">
             <div class="acamlatedScaleImg">
                 <img src="acamlated-White-Background.png">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 6 Unity Python</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
-    </div>
 
-    <!-- Second Page-->
-    <!-- First Photo Grid Row-->
-    <div class="w3-row-padding">
-        <div onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page1">
+        <div id="project6" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class1 class8">
             <div class="acamlatedScaleImg">
                 <img src="acamlated-White-Background.png">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 7 Unity JavaScript</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
 
-        <div onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page1">
+        <div id="project7" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class2 class3">
             <div class="acamlatedScaleImg">
                 <img src="youtube.svg">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 8 Unreal Personal</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
 
-        <div onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page1">
+        <div id="project8" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class2 class4">
             <div class="acamlatedScaleImg">
                 <img src="acamlated-White-Background.png">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 9 Unreal University</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
-    </div>
 
-    <!-- Second Photo Grid Row-->
-    <div class="w3-row-padding">
-        <div onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page1">
+        <div id="project9" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class2 class5">
             <div class="acamlatedScaleImg">
                 <img src="acamlated-White-Background.png">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 10 Unreal CSharp</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
 
-        <div onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page1">
+        <div id="project10" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class2 class6">
             <div class="acamlatedScaleImg">
                 <img src="youtube.svg">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 11 Unreal CPlusPlus</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
 
-        <div onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable projectDiv paged page1">
+        <div id="project11" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class2 class7">
             <div class="acamlatedScaleImg">
                 <img src="acamlated-White-Background.png">
             </div>
             <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <p><b>Project 12 Unreal Python</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project12" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class2 class8">
+            <div class="acamlatedScaleImg">
+                <img src="acamlated-White-Background.png">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 13 Unreal JavaScript</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project13" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class3 class4">
+            <div class="acamlatedScaleImg">
+                <img src="school-solid.svg">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 14 Personal University</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project14" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class3 class5">
+            <div class="acamlatedScaleImg">
+                <img src="acamlated-White-Background.png">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 15 Personal CSharp</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project15" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class3 class6">
+            <div class="acamlatedScaleImg">
+                <img src="acamlated-White-Background.png">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 16 Personal CPlusPlus</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project16" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class3 class7">
+            <div class="acamlatedScaleImg">
+                <img src="school-solid.svg">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 17 Personal Python</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project17" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class3 class8">
+            <div class="acamlatedScaleImg">
+                <img src="acamlated-White-Background.png">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 18 Personal JavaScript</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project18" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class4 class5">
+            <div class="acamlatedScaleImg">
+                <img src="acamlated-White-Background.png">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 19 University CSharp</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project19" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class4 class6">
+            <div class="acamlatedScaleImg">
+                <img src="youtube.svg">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 20 University CPlusPlus</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project20" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class4 class7">
+            <div class="acamlatedScaleImg">
+                <img src="acamlated-White-Background.png">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 21 University Python</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project21" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class4 class8">
+            <div class="acamlatedScaleImg">
+                <img src="acamlated-White-Background.png">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 22 University JavaScript</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project22" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class5 class6">
+            <div class="acamlatedScaleImg">
+                <img src="youtube.svg">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 23 CSharp CPlusPlus</b></p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <div id="project23" onclick="openProjectDetails(document.getElementById('menu'))" class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project class5 class7">
+            <div class="acamlatedScaleImg">
+                <img src="acamlated-White-Background.png">
+            </div>
+            <div class="w3-container w3-white">
+                <p><b>Project 24 CSharp Python</b></p>
                 <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             </div>
         </div>
