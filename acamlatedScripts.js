@@ -166,6 +166,13 @@ function goTo(element)
     closeSidebar();
 }
 
+function goToLastPage()
+{
+    let pageAmount = getPageAmount();
+
+    changePage(pageAmount - 1);
+}
+
 function scrollToElement(element)
 {
     let yPos = element.getBoundingClientRect().top + window.scrollY;
@@ -185,7 +192,7 @@ const Filters = Object.freeze({
     JavaScript: 8,
 })
 
-let filters = [true, true, true, true, true, true, true, true, true];
+let filters = [true, false, false, false, false, false, false, false, false];
 let previousFilter = Filters.All;
 
 function selectFilter(filter)
@@ -195,7 +202,6 @@ function selectFilter(filter)
         // show everything
         for (let i = 0; i < filters.length; i++)
         {
-            filters[i] = true;
             let buttonElement = document.getElementById("filterButton" + i);
 
             if (i === Filters.All)
@@ -205,6 +211,8 @@ function selectFilter(filter)
                 continue;
             }
 
+            filters[i] = false;
+
             buttonElement.classList.add("w3-white");
             buttonElement.classList.remove("w3-black");
         }
@@ -212,6 +220,7 @@ function selectFilter(filter)
 
         checkProjectFilters();
         changePage(0);
+        console.log(filters);
         return;
     }
 
@@ -242,8 +251,33 @@ function selectFilter(filter)
 
     previousFilter = filter;
 
+    let allFiltersTrue = true;
+    for (let i = 0; i < filters.length; i++)
+    {
+        if (i === 0)
+        {
+            continue;
+        }
+
+        if (filters[i])
+        {
+            allFiltersTrue = false;
+        }
+    }
+
+    if (allFiltersTrue)
+    {
+        filters[0] = true;
+        let buttonElementAll = document.getElementById("filterButton0");
+        buttonElementAll.classList.add("w3-black");
+        buttonElementAll.classList.remove("w3-white");
+        previousFilter = Filters.All;
+    }
+
     checkProjectFilters();
     changePage(0);
+
+    console.log(filters);
 }
 
 const projectElements = document.getElementsByClassName("project");
@@ -293,6 +327,8 @@ function displayProjects()
         {
             shouldDisplayElement.style.display = "block";
         }
+
+        updatePagination();
         return;
     }
 
@@ -308,6 +344,8 @@ function displayProjects()
             shouldDisplayElements[i].style.display = "none";
         }
     }
+
+    updatePagination();
 }
 
 function getProjectElementsOfPage(pageNumber)
@@ -325,11 +363,68 @@ function getProjectElementsOfPage(pageNumber)
     const startIndex = pageNumber * 6;
     const endIndex = Math.min(startIndex + 6, shouldDisplayElements.length);
 
-    //console.log("start: " + startIndex + " end: " + endIndex + " display elements: " + shouldDisplayElements.length);
-
     for (let i = startIndex; i < endIndex; i++)
     {
         elements.push(shouldDisplayElements[i]);
     }
     return elements;
+}
+
+function updatePagination()
+{
+    let pageNumbers = getPageAmount();
+
+    let pageArrows = document.getElementsByClassName("pageArrows");
+    let noProjectButton = document.getElementById("noProjectButton");
+
+    if (pageNumbers <= 0)
+    {
+        for (let pageArrow of pageArrows)
+        {
+            pageArrow.style.display = "none";
+            noProjectButton.style.display = "block";
+        }
+    }
+    else
+    {
+        for (let pageArrow of pageArrows)
+        {
+            pageArrow.style.display = "block";
+            noProjectButton.style.display = "none";
+        }
+    }
+
+    const pageNumberButtons = [];
+
+    for (let i = 0; i < 4; i++)
+    {
+        let pageNumberButtonString = "page" + i + "Button";
+        let pageNumberButton = document.getElementById(pageNumberButtonString);
+
+        pageNumberButtons.push(pageNumberButton);
+        pageNumberButton.style.display = "none";
+    }
+
+    for (let i = 0; i < pageNumbers; i++)
+    {
+        pageNumberButtons[i].style.display = "block";
+    }
+}
+
+function getPageAmount()
+{
+    let shouldDisplayElements = document.getElementsByClassName("shouldDisplay");
+
+    let pageNumbers = Math.floor(shouldDisplayElements.length / 6);
+    if (shouldDisplayElements.length % 6 !== 0)
+    {
+        pageNumbers += 1;
+    }
+
+    if (pageNumbers > 4)
+    {
+        console.error("Too many page numbers: " + pageNumbers);
+        return pageNumbers;
+    }
+    return pageNumbers;
 }

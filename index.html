@@ -308,12 +308,14 @@
     <!-- Pagination -->
     <div class="w3-center w3-padding-32">
         <div class="w3-bar">
-            <a onclick="changePage(0)" class="w3-bar-item w3-button w3-hover-black">«</a>
+            <a onclick="changePage(0)" class="w3-bar-item w3-button w3-hover-black pageArrows">«</a>
             <a id="page0Button" onclick="changePage(0)" class="w3-bar-item w3-black w3-button">1</a>
             <a id="page1Button" onclick="changePage(1)" class="w3-bar-item w3-button w3-hover-black">2</a>
             <a id="page2Button" onclick="changePage(2)" class="w3-bar-item w3-button w3-hover-black">3</a>
             <a id="page3Button" onclick="changePage(3)" class="w3-bar-item w3-button w3-hover-black">4</a>
-            <a onclick="changePage(3)" class="w3-bar-item w3-button w3-hover-black">»</a>
+            <a onclick="goToLastPage()" class="w3-bar-item w3-button w3-hover-black pageArrows">»</a>
+            <a id="noProjectButton" onclick="selectFilter(Filters.All)" style="display: none" class="w3-bar-item w3-button
+            w3-hover-black">No projects found. Consider changing some filters</a>
         </div>
     </div>
 
