@@ -276,8 +276,6 @@ function selectFilter(filter)
 
     checkProjectFilters();
     changePage(0);
-
-    console.log(filters);
 }
 
 const projectElements = document.getElementsByClassName("project");
