@@ -52,3 +52,146 @@
 {
     margin-bottom: 16px;
 }
+
+.acamlatedScaleImg
+{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* 10 / 16 * 100 */
+    overflow: hidden;
+}
+
+.acamlatedScaleImg img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills container and cuts excess */
+}
+
+.clickable
+{
+    cursor: pointer;
+}
+
+.animateInFromLeft
+{
+    position:relative;
+    animation:animateInLeft 0.4s
+}
+
+@keyframes animateInLeft
+{
+    from{left:-300px;opacity:0} to{left:0;opacity:1}
+}
+
+.animateOutToLeft
+{
+    position:relative;
+    animation:animateOutLeft 0.4s
+}
+
+@keyframes animateOutLeft
+{
+    from{left:0;opacity:1} to{left:-300px;opacity:0}
+}
+
+.modal
+{
+    z-index:4;
+    display:none;
+    padding-top:70px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+}
+
+.modalContent
+{
+    margin:auto;
+    background-color:#fff;
+    position:relative;
+    padding:0;
+    outline:0;
+    width:900px
+}
+
+@media (max-width:993px)
+{
+    .modalContent{margin:0 10px;width:auto!important}
+    .modal{padding-top:95px;}
+}
+
+.animateZoomIn
+{
+    animation:zoomIn 0.6s
+}
+
+@keyframes zoomIn
+{
+    from{transform:scale(0)} to{transform:scale(1)}
+}
+
+.animateZoomOut
+{
+    animation:zoomOut 0.6s
+}
+
+@keyframes zoomOut
+{
+    from{transform:scale(1)} to{transform:scale(0)}
+}
+
+.overlay
+{
+    position:fixed;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.5);
+    z-index:2
+}
+
+.animateOpacityIn
+{
+    animation:opacityIn 0.6s
+}
+
+@keyframes opacityIn
+{
+    from{opacity:0} to{opacity:1}
+}
+
+.animateOpacityOut
+{
+    animation:opacityOut 0.6s
+}
+
+@keyframes opacityOut
+{
+    from{opacity:1} to{opacity:0}
+}
+
+.shortText
+{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.shortTextBox
+{
+
+}

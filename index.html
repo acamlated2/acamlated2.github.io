@@ -5,432 +5,549 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="acamlatedStyleSheet.css">
     <style>
-        html,body,h1,h2,h3 {font-family: "Roboto", sans-serif; color: white}
-        h4,h5 {font-family: "Roboto", sans-serif; color: salmon}
-        h6 {font-family: "Roboto", sans-serif; color: black}
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </style>
+    <script src="acamlatedScripts.js"></script>
 </head>
-<body>
+<body onload="checkProjectFilters()" class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Page Container -->
-<div class="w3-content acamlatedMarginTop" style="max-width:1400px;">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-        <!-- Left Column -->
-        <div class="w3-third">
-
-            <div class="w3-white w3-text-grey w3-card-4">
-                <div class="w3-display-container">
-                    <img src="acamlated.svg" style="width:100%" alt="Avatar">
-                    <div class="w3-display-bottomleft w3-container w3-text-black">
-                        <h2>Calvin Oktavialdy Setia</h2>
-                    </div>
-                </div>
-                <div class="w3-container">
-                    <p><i class="fa fa-briefcase fa-fw acamlatedMarginRight w3-large salmonOrange"></i>Game Developer</p>
-                    <p><i class="fa fa-home fa-fw acamlatedMarginRight w3-large salmonOrange"></i>Indonesia</p>
-                    <p><i class="fa fa-envelope fa-fw acamlatedMarginRight w3-large salmonOrange"></i>calvinsetia@gmail.com</p>
-
-                    <hr>
-
-                    <p><a href="https://github.com/acamlated2" target="_blank"><i class="fa fa-github fa-fw acamlatedMarginRight w3-large salmonOrange"></i>github.com/acamlated2</a></p>
-                    <p><a href="https://youtube.com/@acamlated3576?si=-Sd9kgZ6cMN8YRWD" target="_blank"><i class="fa fa-youtube-play fa-fw acamlatedMarginRight w3-large salmonOrange"></i>youtube.com/@acamlated</a></p>
-                    <p><a href="https://www.instagram.com/acamlated/" target="_blank"><i class="fa fa-instagram fa-fw acamlatedMarginRight w3-large salmonOrange"></i>instagram.com/acamlated</a></p>
-                    <p><a href="https://twitter.com/acamlated_" target="_blank"><i class="fa fa-twitter fa-fw acamlatedMarginRight w3-large salmonOrange"></i>twitter.com/acamlated_</a></p>
-
-                    <hr>
-
-                    <p class="w3-xlarge"><b><i class="fa fa-asterisk fa-fw acamlatedMarginRight salmonOrange"></i>Skills</b></p>
-
-                    <!-- Game Engines -->
-                    <p><b><i class="fa fa-gears fa-fw acamlatedMarginRight w3-large salmonOrange"></i> Game Engines</b></p>
-                    <p>Unity</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge salmonOrangeBackground" style="width:85%">85%</div>
-                    </div>
-                    <p>SFML</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge salmonOrangeBackground" style="width:70%">
-                            <div class="w3-center w3-text-white">70%</div>
-                        </div>
-                    </div>
-                    <p>Unreal Engine</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge salmonOrangeBackground" style="width:60%">60%</div>
-                    </div>
-                    <br>
-
-                    <!-- Programming language -->
-                    <p><b><i class="fa fa-code fa-fw acamlatedMarginRight w3-large salmonOrange"></i> Programming Languages</b></p>
-                    <p>C#</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge salmonOrangeBackground" style="width:85%">85%</div>
-                    </div>
-                    <p>C++</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge salmonOrangeBackground" style="width:70%">
-                            <div class="w3-center w3-text-white">70%</div>
-                        </div>
-                    </div>
-                    <p>Python</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge salmonOrangeBackground" style="width:60%">60%</div>
-                    </div>
-                    <br>
-
-                    <!-- languages -->
-                    <p class="w3-xlarge w3-text-theme"><b><i class="fa fa-globe fa-fw acamlatedMarginRight salmonOrange"></i>Languages</b></p>
-                    <p><img width="24" height="24" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"style="margin-right: 10px"/>English</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-center salmonOrangeBackground" style="height:24px;width:80%"> IELTS Band 7</div>
-                    </div>
-                    <p><img width="24" height="24" src="https://img.icons8.com/color/48/indonesia.png" alt="indonesia" style="margin-right: 10px"/>Indonesian</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-center salmonOrangeBackground" style="height:24px;width:100%"> Native</div>
-                    </div>
-                    <br>
-                </div>
-            </div><br>
-
-            <!-- End Left Column -->
-        </div>
-
-        <!-- Right Column -->
-        <div class="w3-twothird">
-
-            <!-- Projects -->
-            <div class="w3-container w3-card w3-white">
-                <h2 class="salmonOrange w3-padding-16"><i class="fa fa-cubes fa-fw acamlatedMarginRight w3-xxlarge salmonOrange"></i>Projects</h2>
-                <!-- Project ZipZap -->
-                <div class="w3-container">
-                    <h4 class="salmonOrange"><i class="fa fa-gamepad fa-fw acamlatedMarginRight w3-xlarge salmonOrange"></i>Project ZipZap</h4>
-                    <div class="acamlatedContainer">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IN_MXhfk0n8?si=k2KuEVB1-oFJBjAj"
-                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                                encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <h5 class="acamlatedMarginLeft">Description</h5>
-                    <p>
-                        Project ZipZap is a single-player, isometric, movement focused video game where the player uses
-                        different dash abilities to fight groups of enemies, and to traverse the environment, with the
-                        ability to chain different dashes together to cause unique interactions.
-                    </p>
-                    <h5 class="acamlatedMarginLeft">Details</h5>
-                    <p>
-                        This game is made as a university project with 10 other people, collaborating together as a
-                        studio to create a full, ready to release game within the time span of one year.
-                        <br>
-                        <br>
-                        We decided to split the task by their aspects from the game, and assign each person to an aspect
-                        of the game. This allows each of us to fully understand an aspect of the game and reduce the
-                        time of trying to understand someone else's work for the task assigned to us.
-                    </p>
-                    <h5 class="acamlatedMarginLeft">Role - Enemies</h5>
-                    <p>
-                        In this project, I mainly took the lead on designing and implementing the enemy encounters. This included:
-                    </p>
-                    <h6 class="acamlatedMarginLeft">Enemy Design</h6>
-                    <p>
-                         - Created variety of enemy types, each with unique behaviours.
-                        <br>
-                         - Defined enemy stats and abilities, while ensuring a balanced and engaging challenge for players.
-                        <br>
-                         - Managed and made sure that all enemies, both in visual and technical design fits within the
-                        theme of the game.
-                    </p>
-                    <h6 class="acamlatedMarginLeft">Arena Design</h6>
-                    <p>
-                         - Created an arena template that can easily be used to turn parts of the levels designed by the
-                        level design team to a working arena.
-                        <br>
-                         - Placed enemies and consumables strategically within levels to create a sense of progression
-                        and challenge.
-                        <br>
-                         - Considered factors like level flow, player visibility, and cover when designing enemy placements.
-                    </p>
-                    <h6 class="acamlatedMarginLeft">System Implementation</h6>
-                    <p>
-                        - Designed the AI of each enemy that adapts with changes of conditions in the arena. Giving the
-                        enemies interaction between each other.
-                    </p>
-                    <h6 class="acamlatedMarginLeft">Impact & Achievements</h6>
-                    <p>
-                        Some accomplishment I've achieved with the systems I've implemented according to our playtests:
-                        <br>
-                        - Increased player engagement by balancing arenas, keeping game flow, and controlling arena
-                        difficulty level.
-                        <br>
-                         - Improved player's retention by creating a satisfying challenge curve. Shown by player's
-                        willingness to keep trying when they failed a level multiple times.
-                        <br>
-                         - Created enemy types that are memorable and easily distinguishable from each other.
-                    </p>
-                    <br>
-                    <a href="https://studio4point8.itch.io/project-zipzap"><i class="fa fa-download fa-fw w3-xlarge salmonOrange"></i></a>
-                    <hr>
-                </div>
-
-                <!-- laze -->
-                <div class="w3-container">
-                    <h4><i class="fa fa-gamepad fa-fw acamlatedMarginRight w3-xlarge salmonOrange"></i>Laze</h4>
-                    <div class="acamlatedContainer">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dk-JLwPQKqg?si=FjXjd28NJ-9Cngh2"
-                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                                encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <h5 class="acamlatedMarginLeft">Description</h5>
-                    <p>
-                        Laze is a 2D reverse bullet hell game where the player gets punished by doing actions, forcing
-                        them to strategise their actions and behaviours differently.
-                    </p>
-                    <h5 class="acamlatedMarginLeft">Details</h5>
-                    <p>
-                        This project is in part of my dissertation project in university, of proposing a way to help jump
-                        start the development process of enemy AIs in Unity. The project includes a template of a base
-                        enemy prefab, a behaviour tree to help visualise the AI's behaviour flow, and object pools to
-                        help reduce the load of spawning and despawning enemies.
-                    </p>
-                    <h5 class="acamlatedMarginLeft">Enemies</h5>
-                    <p>
-                        Examples of enemies made with the system:
-                        <br>
-                        <h6 class="acamlatedMarginLeft"> - Normal Melee Enemy</h6>
-                        Only chasing and attacking player with melee attacks, these enemies serves as the most basic enemy type.
-                        <br>
-                        <h6 class="acamlatedMarginLeft"> - Ranged Enemy</h6>
-                        Attacks with a shooting projectiles, this enemy type compensates for the normal enemies' lack of range.
-                        <br>
-                        <h6 class="acamlatedMarginLeft"> - Shielded Enemy</h6>
-                        With a shield that tracks the player's position and rotates around them, the shielded enemy protects
-                        other enemies by standing between them. If their shield is broken however, they will chase the player
-                        like the normal enemies.
-                        <br>
-                        <h6 class="acamlatedMarginLeft">Bomber Enemy</h6>
-                        Shooting exploding projectiles, the bomber enemy compensates for other enemies' lack of AOE damage.
-                        If they ran out of bullets or gets defeated, they explode to multiple exploding projectiles.
-                    </p>
-                    <h5 class="acamlatedMarginLeft">Enemy Interactions</h5>
-                    <p>
-                        To make enemies' behaviour less predictable, interactions between enemies are made. The interactions
-                        are as follows:
-                        <br>
-                        <h6 class="acamlatedMarginLeft">Ranged & Shielded Enemy Interactions</h6>
-                        Shielded enemies will stay within a distance away from the player. Ranged enemies will look for
-                        a shielded enemy that still has their shield, and stands behind them, hiding from the player. If
-                        the shielded enemy is defeated, the ranged enemy will look for another shielded enemy.
-                        <br>
-                        <h6 class="acamlatedMarginLeft">Bomber Enemy Interaction</h6>
-                        As bomber enemy's projectile can damage other enemies, all enemies will try to avoid the projectiles.
-                        If an exploding projectile gets too close to an enemy, the enemy will calculate a path away from
-                        the projectiles.
-                    </p>
-                    <hr>
-                </div>
-
-                <!-- Project "Medea" -->
-                <div class="w3-container">
-                    <h4><img width="24" height="24" src="vr-cardboard-solid.svg" class="acamlatedMarginRight">"Medea"</h4>
-                    <div class="acamlatedContainer">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1HOwyeNFCFs?si=6oejOHiSlS3D1D2L"
-                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                                encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <h5 class="acamlatedMarginLeft">Description</h5>
-                    <p>
-                        Made to showcase the possibility of games technology to better immerse users with a classical play,
-                        this unnamed project uses VR to retell scenes from the play "Medea".
-                    </p>
-                    <h5 class="acamlatedMarginLeft">Gameplay</h5>
-                    <p>
-                        This project uses VR to enhance the impressiveness of the classical play and let users be present
-                        in the story. To do so, the project lets users to directly interact with objects in the scene.
-                        The objects are as follows:
-                        <br>
-                         - Pebbles
-                        <br>
-                        Pebbles can be picked up and thrown, luring Medea towards the designated location lead by the user.
-                        <br>
-                         - Vases
-                        <br>
-                        The vases can be pulled towards the player using the player's controller movement, similar to
-                        how <i>Half-Life: Alyx</i> pulls object towards the player.
-                    </p>
-                    <hr>
-                </div>
-
-                <!-- Messy Theater -->
-                <div class="w3-container">
-                    <h4><i class="fa fa-gamepad fa-fw acamlatedMarginRight w3-xlarge salmonOrange"></i>Messy Theater</h4>
-                    <h5 class="acamlatedMarginLeft">Description</h5>
-                    <p>
-                        Messy Theater is a local multiplayer game where players have to make a king laugh by interacting
-                        with each other or objects in the scene.
-                    </p>
-                    <h5 class="acamlatedMarginLeft">Details</h5>
-                    <p>
-                        This game was made with a 4-person group for the 2024 Global Game Jam. In the project, my role
-                        was to make and spawn the objects players could interact with. The objects include:
-                    </p>
-                    <h6 class="acamlatedMarginLeft"> - Tomatoes</h6>
-                    <p>
-                        Every so often, tomatoes will get thrown towards the players. If a player gets hit by the tomatoes,
-                        the laugh meter will fill up. Every time a tomato spawns, there is chance for it to be an exploding
-                        tomato, throwing objects around on impact.
-                    </p>
-                    <h6 class="acamlatedMarginLeft"> - Hammer</h6>
-                    <p>
-                        Every set amount of time, a swinging hammer will be lowered from the ceiling. If a player gets hit
-                        by the hammer, the laugh meter would fill.
-                    </p>
-                    <h6 class="acamlatedMarginLeft"> - Blocks</h6>
-                    <p>
-                        Every set amount of time, the ground where players stand on will shoot up, throwing players on top
-                        and on to the side of it. If a player gets thrown, the laugh meter fills up.
-                    </p>
-                    <a href="https://globalgamejam.org/games/2024/messy-theatre-7"><i class="fa fa-download fa-fw w3-xlarge salmonOrange"></i></a>
-                    <hr>
-                </div>
-
-                <!-- Defend -->
-                <div class="w3-container">
-                    <h4><i class="fa fa-gamepad fa-fw acamlatedMarginRight-right w3-xlarge salmonOrange"></i>Defend</h4>
-                    <div class="acamlatedContainer">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mMIYOAeWzuU?si=pKUXwWrNbucN2vzj"
-                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                                encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <h5 class="acamlatedMarginLeft">Description</h5>
-                    <p>
-                        Defend is a project made to showcase how an AI could help players to make decisions in a tower
-                        defense game. In this project, players can press a button and ask the AI for suggestions in
-                        various aspects of the game.
-                    </p>
-                    <h5 class="acamlatedMarginLeft">Details</h5>
-                    <p>
-                        Made as a university project, this project shows how an AI can be used to help players in a tower
-                        defense game.
-                    </p>
-                    <h5 class="acamlatedMarginLeft">AI</h5>
-                    <p>
-                        In this project, players can press a button and request the AI for suggestions. The AI takes in
-                        these considerations:
-                    </p>
-                    <h6 class="acamlatedMarginLeft"> - Tower Type</h6>
-                    <p>
-                        The AI looks for enemies in the scene, and sums up all their different stats. The AI then uses that
-                        to decide which tower type is currently the most suitable to buy.
-                    </p>
-                    <h6 class="acamlatedMarginLeft"> - Platform</h6>
-                    <p>
-                        The AI checks if buying a platform is better than buying a tower. A platform can be placed on a
-                        block to increase its height, increasing the range of towers placed on top of it. The AI calculates
-                        the projected price of towers compared to using the platform to decide.
-                    </p>
-                    <h6 class="acamlatedMarginLeft"> - Upgrades</h6>
-                    <p>
-                        If buying a platform isn't viable, the AI checks if buying an upgrade will. The AI takes in the
-                        needed damage type, finds the cheapest tower to upgrade. The AI checks to buy an upgrade by
-                        comparing the projected price of buying an upgrade to the price of a brand new tower.
-                    </p>
-                    <h6 class="acamlatedMarginLeft"> - Tower Placement</h6>
-                    <p>
-                        if all other checks failed, then the AI knows to suggest to buy a new tower. The AI checks every
-                        ground block in the scene, and see which one has the best coverage if a tower is placed on top of
-                        it.
-                    </p>
-                    <hr>
-                </div>
-
-                <!-- Jump -->
-                <div class="w3-container">
-                    <h4><i class="fa fa-gamepad fa-fw acamlatedMarginRight w3-xlarge salmonOrange"></i>Jump</h4>
-                    <div class="acamlatedContainer">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TsUEIMMG2k4?si=h-YJMZKAEa3vUJuA"
-                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h5 class="acamlatedMarginLeft">Description</h5>
-                    <p>
-                        Jump is a 2D platformer game where players have to jump up platforms as high as they can while
-                        avoiding enemies.
-                    </p>
-                    <h5 class="acamlatedMarginLeft">Details</h5>
-                    <p>
-                        Made using SFML, this game is made for my 1st year university project.
-                    </p>
-                    <hr>
-                </div>
-                <br>
-            </div>
-            <br>
-
-            <!-- Education -->
-            <div class="w3-container w3-card w3-white">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw acamlatedMarginRight w3-xxlarge salmonOrange"></i>Education</h2>
-                <div class="w3-container">
-                    <h4><img width="24" height="24" src="school-solid.svg" class="acamlatedMarginRight">
-                        <b>University of the West of England, Bristol</b></h4>
-                    <h5 class="w3-opacity"><b>BSc (Hons) Games Technology - (2:1)</b></h5>
-                    <h6 class="salmonOrange"><i class="fa fa-calendar fa-fw acamlatedMarginRight"></i>2021 - Present</h6>
-                    <p>
-                        Some of the courses in the degree was:
-                        <br>
-                         - Commercial Games Development
-                        <br>
-                         - Advanced Technologies
-                        <br>
-                         - Games in C++
-                        <br>
-                         - Game Level Design
-                        <br>
-                         - Gameplay Programming
-                    </p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h4><img width="24" height="24" src="school-solid.svg" class="acamlatedMarginRight">
-                        <b>City College Plymouth, Plymouth</b></h4>
-                    <h5 class="w3-opacity"><b>CIA14 International Foundation Course (Science Pathway)</b></h5>
-                    <h6 class="salmonOrange"><i class="fa fa-calendar fa-fw acamlatedMarginRight"></i>2021 - 2021</h6>
-                    <p>
-                        Some of the modules in the degree was:
-                        <br>
-                         - Advanced Mathematics
-                        <br>
-                         - ICT
-                    </p>
-                </div>
-                <br>
-            </div>
-
-            <!-- End Right Column -->
-        </div>
-
-        <!-- End Grid -->
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="sidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="closeSidebar()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="acamlated-White-Background.png" style="width:100%;" class="w3-round"><br><br>
+        <h4><b>Calvin Oktavialdy Setia</b></h4>
     </div>
-
-    <!-- End Page Container -->
-</div>
-
-<footer class="w3-container salmonOrangeBackground w3-center acamlatedMarginTop">
-    <div class="acamlatedMarginBottom">
-        <p>Find Me</p>
+    <div class="w3-bar-block">
+        <a onclick="goTo(document.getElementById('portfolio'))" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+        <a onclick="goTo(document.getElementById('about'))" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+        <a onclick="goTo(document.getElementById('connect'))" class="w3-bar-item w3-button w3-padding"><i class="fa fa-link fa-fw w3-margin-right"></i>CONNECT TO ME</a>
+    </div>
+    <div class="w3-panel w3-large">
         <a href="https://github.com/acamlated2" target="_blank"><i class="fa fa-github hoverScale"></i></a>
         <a href="https://youtube.com/@acamlated3576?si=-Sd9kgZ6cMN8YRWD" target="_blank"><i class="fa fa-brands fa-youtube-play hoverScale"></i></a>
         <a href="https://www.instagram.com/acamlated/" target="_blank"><i class="fa fa-instagram hoverScale"></i></a>
         <a href="https://twitter.com/acamlated_" target="_blank"><i class="fa fa-twitter hoverScale"></i></a>
+        <a href="https://www.linkedin.com/in/calvin-oktavialdy-setia/" target="_blank"><i class="fa fa-linkedin hoverScale"></i></a>
     </div>
-</footer>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+        <a href="#"><img src="acamlated-White-Background.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="openSidebar()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+            <h1><b>Calvin Oktavialdy Setia</b></h1>
+            <div style="padding-bottom: 16px" class="w3-section w3-bottombar">
+                <h4><b>Projects</b></h4>
+                <span class="w3-margin-right">Filter:</span>
+                <button id="filterButton0" onclick="selectFilter(Filters.All)" class="w3-button w3-black">ALL</button>
+                <button id="filterButton1" onclick="selectFilter(Filters.Unity)" class="w3-button w3-white">Unity</button>
+                <button id="filterButton2" onclick="selectFilter(Filters.Unreal)" class="w3-button w3-white">Unreal Engine</button>
+                <button id="filterButton3" onclick="selectFilter(Filters.Personal)" class="w3-button w3-white">Personal Projects</button>
+                <button id="filterButton4" onclick="selectFilter(Filters.University)" class="w3-button w3-white">University Projects</button>
+                <button id="filterButton5" onclick="selectFilter(Filters.CSharp)" class="w3-button w3-white">C#</button>
+                <button id="filterButton6" onclick="selectFilter(Filters.CPlusPlus)" class="w3-button w3-white">C++</button>
+                <button id="filterButton7" onclick="selectFilter(Filters.Python)" class="w3-button w3-white">Python</button>
+                <button id="filterButton8" onclick="selectFilter(Filters.JavaScript)" class="w3-button w3-white">JavaScript</button>
+                <button id="filterButton9" onclick="selectFilter(Filters.VR)" class="w3-button w3-white">VR</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row-padding">
+        <div id="project0" onclick="openProjectDetails(document.getElementById('project0Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class4 class5">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/Project ZipZap.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>Project ZipZap</b></p>
+                <p class="shortText">Project ZipZap is a single-player, isometric, movement focused game where the player uses different
+                dash abilities to fight groups of enemies, and to traverse the environment, with the ability to chain
+                    different dashes together to cause unique interactions.</p>
+            </div>
+        </div>
+
+        <div id="project1" onclick="openProjectDetails(document.getElementById('project1Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class3 class4 class5">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/Laze.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>Laze</b></p>
+                <p class="shortText">Laze is a 2D reverse bullet hell game where the player gets punished by doing actions,
+                    forcing them to strategise their actions and behaviours differently.</p>
+            </div>
+        </div>
+
+        <div id="project2" onclick="openProjectDetails(document.getElementById('project2Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class4 class5">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/Defend.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>Defend</b></p>
+                <p class="shortText">Defend is a 3D tower defense game made to showcase how an AI could help players to make
+                    decisions in the game. In this game, players can press a single button and ask the AI for suggestions.
+                    The AI will then give suggestions based on various aspects of the game. </p>
+            </div>
+        </div>
+
+        <div id="project3" onclick="openProjectDetails(document.getElementById('project3Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class4 class5 class9">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/Medea.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>Medea</b></p>
+                <p class="shortText">Medea is a VR game based on the classical play "Medea". In this game, the player becomes
+                a godly being and interacts with the scene to help get Medea towards a designated location and progress
+                through the story. </p>
+            </div>
+        </div>
+
+        <div id="project4" onclick="openProjectDetails(document.getElementById('project4Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class3 class5">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/Messy Theater.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>Messy Theater</b></p>
+                <p class="shortText">Messy Theater is a local multiplayer game where players have to make a king laugh by
+                    interacting with each other or objects in the scene.</p>
+            </div>
+        </div>
+
+        <div id="project5" onclick="openProjectDetails(document.getElementById('project5Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class4 class6">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/Jump.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>Jump</b></p>
+                <p class="shortText">Jump Jump is a 2D platformer game where players have to jump up platforms as high
+                    as they can while avoiding enemies.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+            <a onclick="changePage(0)" class="w3-bar-item w3-button w3-hover-black pageArrows">«</a>
+            <a id="page0Button" onclick="changePage(0)" class="w3-bar-item w3-black w3-button">1</a>
+            <a id="page1Button" onclick="changePage(1)" class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a id="page2Button" onclick="changePage(2)" class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a id="page3Button" onclick="changePage(3)" class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a onclick="goToLastPage()" class="w3-bar-item w3-button w3-hover-black pageArrows">»</a>
+            <a id="noProjectButton" onclick="selectFilter(Filters.All)" style="display: none" class="w3-bar-item w3-button
+            w3-hover-black">No projects found. Consider changing some filters or click <b>here</b>.</a>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h4><b>About Me</b></h4>
+        <p>I am an aspiring third-year Games Technology(Hons) student in the University of the West of England, Bristol,
+        interested in technology and the process of developing games. During my time in university, I've learned to plan,
+        manage, and develop multiple game projects. </p>
+        <p>From a young age, I've been fascinated by video games. However, what truly excites me is the process of designing
+        and developing the mechanics of a game. I'm experienced in multiple game engines and multiple programming languages.
+        I also experienced in developing in various game platforms such as VR and mobile. My goal is to contribute to
+        the development of innovative and immersive games, particularly in the open-world RPG genre.</p>
+        <div class="w3-container">
+            <h4><img width="24" height="24" src="school-solid.svg" class="acamlatedMarginRight">
+                <b>University of the West of England, Bristol</b></h4>
+            <h5 class="w3-opacity"><b>BSc (Hons) Games Technology - (2:1)</b></h5>
+            <h6><i class="fa fa-calendar fa-fw acamlatedMarginRight"></i>2021 - Present</h6>
+            <p>
+                Some of the courses in the degree was:
+                <br>
+                - Commercial Games Development
+                <br>
+                - Advanced Technologies
+                <br>
+                - Games in C++
+                <br>
+                - Game Level Design
+                <br>
+                - Gameplay Programming
+            </p>
+            <hr>
+        </div>
+
+        <div class="w3-container">
+            <h4><img width="24" height="24" src="school-solid.svg" class="acamlatedMarginRight">
+                <b>City College Plymouth, Plymouth</b></h4>
+            <h5 class="w3-opacity"><b>CIA14 International Foundation Course (Science Pathway)</b></h5>
+            <h6><i class="fa fa-calendar fa-fw acamlatedMarginRight"></i>2021 - 2021</h6>
+            <p>
+                Some of the modules in the degree was:
+                <br>
+                - Advanced Mathematics
+                <br>
+                - ICT
+            </p>
+        </div>
+        <hr>
+
+        <h4>Skills</h4>
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container">
+                <p><b><i class="fa fa-gears fa-fw acamlatedMarginRight w3-large"></i> Game Engines</b></p>
+                <p>Unity</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+                </div>
+                <p>SFML</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70%</div>
+                </div>
+                <p>Unreal Engine</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:60%">60%</div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-container acamlatedMarginBottom">
+                <p><b><i class="fa fa-code fa-fw acamlatedMarginRight w3-large"></i> Programming & Scripting Languages</b></p>
+                <p>C#</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+                </div>
+                <p>C++</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70%</div>
+                </div>
+                <p>JavaScript</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:60%">60%</div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-container acamlatedMarginBottom">
+                <p><b><i class="fa fa-globe fa-fw acamlatedMarginRight"></i>Languages</b></p>
+                <p><img width="24" height="24" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"
+                        style="margin-right: 10px">English</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:77%">IELTS Band 7</div>
+                </div>
+                <p><img width="24" height="24" src="https://img.icons8.com/color/48/indonesia.png" alt="indonesia"
+                        style="margin-right: 10px">Indonesian</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:100%">Native%</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://docs.google.com/document/d/1_EhAhrQasVkVW8g3nO0dBcHJ6LD76U1TPfNY57yyD_A/edit?usp=sharing"
+           target="_blank"><div class="w3-button w3-dark-grey w3-padding-large w3-margin-top">Get CV</div></a>
+    </div>
+
+    <!-- Connect -->
+    <div id="connect" class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h4><b>Connect to Me</b></h4>
+        <p onclick="copyEmailToClipboard()" style="cursor:pointer"><i class="fa fa-envelope fa-fw acamlatedMarginRight w3-large"></i>calvinsetia@gmail.com</p>
+        <p><a href="https://github.com/acamlated2" target="_blank"><i class="fa fa-github fa-fw acamlatedMarginRight
+        w3-large"></i>github.com/acamlated2</a></p>
+        <p><a href="https://youtube.com/@acamlated3576?si=-Sd9kgZ6cMN8YRWD" target="_blank"><i class="fa fa-youtube-play
+        fa-fw acamlatedMarginRight w3-large"></i>youtube.com/@acamlated</a></p>
+        <p><a href="https://www.instagram.com/acamlated/" target="_blank"><i class="fa fa-instagram fa-fw
+        acamlatedMarginRight w3-large"></i>instagram.com/acamlated</a></p>
+        <p><a href="https://twitter.com/acamlated_" target="_blank"><i class="fa fa-twitter fa-fw acamlatedMarginRight
+        w3-large"></i>twitter.com/acamlated_</a></p>
+        <p><a href="https://www.linkedin.com/in/calvin-oktavialdy-setia/" target="_blank"><i class="fa
+        fa-linkedin fa-fw acamlatedMarginRight w3-large"></i>https://www.linkedin.com/in/calvin-oktavialdy-setia/</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer style="margin: auto; text-align: center" class="w3-container w3-dark-grey">
+        <div>
+            <p>Find Me</p>
+            <a href="https://github.com/acamlated2" target="_blank"><i class="fa fa-github hoverScale"></i></a>
+            <a href="https://youtube.com/@acamlated3576?si=-Sd9kgZ6cMN8YRWD" target="_blank"><i class="fa fa-brands fa-youtube-play hoverScale"></i></a>
+            <a href="https://www.instagram.com/acamlated/" target="_blank"><i class="fa fa-instagram hoverScale"></i></a>
+            <a href="https://twitter.com/acamlated_" target="_blank"><i class="fa fa-twitter hoverScale"></i></a>
+            <a href="https://www.linkedin.com/in/calvin-oktavialdy-setia/" target="_blank"><i class="fa fa-linkedin hoverScale"></i></a>
+        </div>
+    </footer>
+    <!-- End page content -->
+</div>
+
+<!-- Menu Modal -->
+<div id="project0Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Project ZipZap</h1>
+        </div>
+        <div class="w3-container">
+            <div class="acamlatedContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IN_MXhfk0n8?si=Kumyj0pbhBmSZk_w"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+
+            </div>
+            <p>Project ZipZap is a single-player, isometric, movement focused game where the player uses different
+                dash abilities to fight groups of enemies, and to traverse the environment, with the ability to chain
+                different dashes together to cause unique interactions.</p>
+            <p>This game is made as a university project with 10 other people, collaborating together as a studio to
+                create a full, ready to release game within the time span of one year.</p>
+            <p>We decided to split the task by their aspects from the game, and assign each person to an aspect of the
+                game. This allows each of us to fully understand an aspect of the game and reduce the time of trying to
+                understand someone else's work for the task assigned to us.</p>
+            <h4>Role</h4>
+            <p>In this project, I mainly took the lead on designing and implementing the enemy encounters. This included:</p>
+            <h6>Enemy Design</h6>
+            <p>- Created variety of enemy types, each with unique behaviours. <br>
+                - Defined enemy stats and abilities, while ensuring a balanced and engaging challenge for players. <br>
+                - Managed and made sure that all enemies, both in visual and technical design fits within the theme of the game. <br>
+                - Designed the AI of each enemy that adapts with changes of conditions in the arena. Giving the enemies interaction between each other.</p>
+            <h6>Arena Design</h6>
+            <p>- Created an arena template that can easily be used to turn parts of the levels designed by the level design team to a working arena. <br>
+                - Placed enemies and consumables strategically within levels to create a sense of progression and challenge. <br>
+                - Considered factors like level flow, player visibility, and cover when designing enemy placements.</p>
+            <h6>Impact & Achievements</h6>
+            <p>Some accomplishment I've achieved with the systems I've implemented according to our playtests: <br>
+                - Increased player engagement by balancing arenas, keeping game flow, and controlling arena difficulty level. <br>
+                - Improved player's retention by creating a satisfying challenge curve. Shown by player's willingness to keep trying when they failed a level multiple times. <br>
+                - Created enemy types that are memorable and easily distinguishable from each other.</p>
+            <a href="https://studio4point8.itch.io/project-zipzap" target="_blank" class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                <i class="fa fa-download w3-margin-right"></i>Download</a>
+        </div>
+    </div>
+</div>
+
+<div id="project1Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Laze</h1>
+        </div>
+        <div class="w3-container">
+            <div class="acamlatedContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dk-JLwPQKqg?si=F5ejzAttaMOr5MoR"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Laze is a 2D reverse bullet hell game where the player gets punished by doing actions, forcing them to
+                strategise their actions and behaviours differently.</p>
+            <p>This project is in part of my dissertation project in university, of proposing a way to help jump start
+                the development process of enemy AIs in Unity. The project includes a template of a base enemy prefab,
+                a behaviour tree to help visualise the AI's behaviour flow, and object pools to help reduce the load of
+                spawning and despawning enemies.</p>
+            <h4>Enemies</h4>
+            <p>Examples of enemies made with the system:<br>
+                <b>- Normal Melee Enemy</b><br>
+                Serving as the most basic enemy type, this type of enemy chases the player and deals damage in melee range. <br>
+                <b>- Ranged Enemy</b><br>
+                The ranged enemy shoots projectiles to make up for the normal enemy's lack of range. The enemy would
+                keep at a distance from the player, forcing the player to use different strategy to fight against them. <br>
+                <b>- Shielded Enemy</b><br>
+                Having a big shield that rotates around them, the shielded enemies stand in the front lines and protect
+                other enemies from ranged attacks. When their shield is broken, they will chase the player and does melee
+                attacks. <br>
+                <b>- Bomber Enemy</b><br>
+                The bomber enemy shoots exploding projectiles from afar, damaging anything in its range. When they run out
+                of exploding projectiles, they run towards the player and explode to multiple exploding projectiles.
+            </p>
+            <h4>Enemy Interactions</h4>
+            <p>To make enemies' behaviour less predictable, interactions between enemies are made. The interactions are
+                as follows:<br>
+                <b> - Ranged & Shielded Enemy Interactions</b><br>
+                Shielded enemies will stay within a distance away from the player. Ranged enemies will look for a
+                shielded enemy that still has their shield, and stands behind them, hiding from the player. If the
+                shielded enemy is defeated, the ranged enemy will look for another shielded enemy.<br>
+                <b> - Bomber Enemy Interaction</b>
+                As bomber enemy's projectile can damage other enemies, all enemies will try to avoid the projectiles.
+                If an exploding projectile gets too close to an enemy, the enemy will calculate a path away from the projectiles.
+            </p>
+            <a href="https://github.com/acamlated2/Laze" target="_blank" class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                Check Project</a>
+        </div>
+    </div>
+</div>
+
+<div id="project2Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Defend</h1>
+        </div>
+        <div class="w3-container">
+            <div class="acamlatedContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mMIYOAeWzuU?si=_3ThWeIiuKmfGQff"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Defend is a 3D tower defense game made to showcase how an AI could help players to make
+                decisions in the game. In this game, players can press a single button and ask the AI for suggestions.
+                The AI will then give suggestions based on various aspects of the game. </p>
+            <p>This project is in part of a project in my university, of proposing a way for AI to assist players in a game
+            as a sub commander. In this project, the player can request the AI to view of the current state of the game,
+            and the AI will give the player suggestions of what actions could benefit the player. </p>
+            <p>The player can freely control how the AI behaves by using sliders. Each slider controls one aspect of the
+            game the AI use as considerations. </p>
+            <h4>AI Considerations</h4>
+            <p><b> - Damage Type</b><br>
+                The enemies in this game have three types of defensive stats. Each stat can be effectively damaged by a
+                specific damage type. When the player asks for the AI's suggestions, the AI will take all the enemies
+                currently in the scene, and sum up all their defensive stats. The AI will then suggest a damage type that
+                is most suitable to deal damage to the defensive stat tha enemy have most. <br>
+                <b>- Platform</b><br>
+                In this game, the player can place towers on tiles of varying height. The higher the towers are placed,
+                the more range they gain. The AI will see which tile would benefit most by placing a platform, and creates
+                a projected price of placing a platform, and a tower. The AI will then compare the projected price and
+                check whether it is sensible to buy a platform compared to just buying a tower. <br>
+                <b>- Upgrades</b><br>
+                Each tower can be upgraded to increase any of their damage type. The AI will take the suggested damage type
+                and creates a projected price of buying an upgrade. It will then decide whether to buy an upgrade by
+                comparing the projected price to buying a new tower. <br>
+                <b>- Tower Placement</b><br>
+                If all the other considerations fail, the AI then knows that buying a new tower is the best option. The AI
+                then checks all tiles on the map, and finds the best tile to place a tower on based on its coverage of
+                the map.
+            </p>
+            <a href="https://github.com/acamlated2/Defend" target="_blank" class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                Check Project</a>
+        </div>
+    </div>
+</div>
+
+<div id="project3Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Medea</h1>
+        </div>
+        <div class="w3-container">
+            <div class="acamlatedContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1HOwyeNFCFs?si=huPbt4wQGWLOgKOA"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Medea is a VR game based on the classical play "Medea". In this game, the player becomes
+                a godly being and interacts with the scene to help get Medea towards a designated location and progress
+                through the story. </p>
+            <p>This project is in part of a project in my university, of proposing a way to use games technologies to
+            help enhance the delivery of a classical play. In this game, the player can interact with objects scattered
+            around the scene to lead Medea towards the designated point. Several decisions are made to make the player feel
+            as if they are a god, such as the camera positions, and the interactions the player can do. </p>
+            <p>This project uses VR to enhance the immersiveness of the story being told. Players can interact with objects
+            in the environment, making them feel more as if they are actually in the scene with the characters. </p>
+            <h4>Gameplay</h4>
+            <p><b> - Pebbles</b><br>
+                Players can pick up pebbles and throw them. If Medea can see the pebble hitting the ground, Medea will
+                approach the pebble. After a set amount of time, Medea will go back to the latest checkpoint. <br>
+                <b> - Vases</b><br>
+                The vases can be pulled towards the player using the player's controller movement, similar to how
+                <i>Half-Life: Alyx</i> pulls object towards the player. As the vase hits the ground, the vase will make
+                a sound that attracts Medea towards its position. <br>
+            </p>
+            <a href="https://github.com/acamlated2/Drama---Unity" target="_blank" class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                Check Project</a>
+        </div>
+    </div>
+</div>
+
+<div id="project4Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Messy Theater</h1>
+        </div>
+        <div class="w3-container">
+            <div class="acamlatedContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gpZnEO6w_-I?si=oPvl-LK9W4SphAbr"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Messy Theater is a local multiplayer game where players have to make a king laugh by interacting with each
+                other or objects in the scene. </p>
+            <p>This project was made with a 4-person team for the 2024 Global Game Jam. In the project, my role was to
+                make and spawn the objects players could interact with.</p>
+            <p>In this game, players can interact with each other by picking objects or each other, and throwing them. They
+            can also interact with objects in the scene like the cannon. </p>
+            <h4>Objects</h4>
+            <p><b> - Tomatoes</b><br>
+                Every so often, tomatoes will get thrown towards the players. If a player gets hit by the tomatoes, the
+                laugh meter will fill up. Every time a tomato spawns, there is chance for it to be an exploding tomato,
+                throwing objects around on impact and filling the laugh meter for an extra amount. <br>
+                <b> - Hammer</b><br>
+                Every set amount of time, a swinging hammer will be lowered from the ceiling. If a player gets hit by the
+                hammer, they will be thrown across the room, filling the laugh meter. <br>
+                <b> - Blocks</b><br>
+                Every couple of seconds, there is a chance for the ground to shoot upwards, throwing players in the air,
+                and filling the laugh meter. <br>
+            </p>
+            <a href="https://globalgamejam.org/games/2024/messy-theatre-7" target="_blank" class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                <i class="fa fa-download w3-margin-right"></i>Download</a>
+        </div>
+    </div>
+</div>
+
+<div id="project5Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Jump</h1>
+        </div>
+        <div class="w3-container">
+            <div class="acamlatedContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TsUEIMMG2k4?si=JgqN065SbQTtfRov"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Jump is a 2D platformer game where players have to jump up platforms as high as they can while avoiding enemies.</p>
+            <p>Made in C++ using SFML, this game was made for a university project. In this game, players can climb platforms
+            where some of them are occupied by enemies. They can also be filled with health items to help players to
+            traverse through the platforms. </p>
+            <p>In this game, players can interact with each other by picking objects or each other, and throwing them. They
+            can also interact with objects in the scene like the cannon. </p>
+            <h4>Objects in the Game</h4>
+            <p><b> - Platforms</b><br>
+                Taking inspirations from <i>Doodle jump</i>, the platforms in this game are infinitely and randomly generated.
+                The platforms are instantiated at the beginning, each spawned at a random position relative to the previous
+                platform, preventing the platforms to be unreachable by the player. <br>
+                To prevent lag in the game, the game would only instantiate a set amount of platforms. Once the player reaches
+                a certain height above the platform, the platform would then be moved towards the top to be a new platform. <br>
+                <b> - Enemies</b><br>
+                Everytime a platform is reset, there is a chance for it to be spawned with an enemy. If the player touches
+                the enemy, they will get hurt. The player can throw projectiles towards the enemy to remove them from the
+                platform. <br>
+                <b> - Hearts</b><br>
+                When a platform is reset, there is also a chance for it to have a heart on it. Hearts heal the player by
+                one health. <br>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="overlay" onclick="closeEverything()" style="cursor:pointer" id="overlay"></div>
 
 </body>
 </html>
