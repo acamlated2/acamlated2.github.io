@@ -190,9 +190,10 @@ const Filters = Object.freeze({
     CPlusPlus: 6,
     Python: 7,
     JavaScript: 8,
+    VR: 9,
 })
 
-let filters = [true, false, false, false, false, false, false, false, false];
+let filters = [true, false, false, false, false, false, false, false, false, false];
 let previousFilter = Filters.All;
 
 function selectFilter(filter)
@@ -425,4 +426,9 @@ function getPageAmount()
         return pageNumbers;
     }
     return pageNumbers;
+}
+
+function copyEmailToClipboard()
+{
+    navigator.clipboard.writeText("calvinsetia@gmail.com");
 }
