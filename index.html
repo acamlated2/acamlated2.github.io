@@ -136,8 +136,44 @@
             </div>
             <div class="w3-container w3-white shortTextBox">
                 <p><b>Jump</b></p>
-                <p class="shortText">Jump Jump is a 2D platformer game where players have to jump up platforms as high
+                <p class="shortText">Jump is a 2D platformer game where players have to jump up platforms as high
                     as they can while avoiding enemies.</p>
+            </div>
+        </div>
+
+        <div id="project6" onclick="openProjectDetails(document.getElementById('project6Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class3 class8">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/acamlated.com.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>acamlated.com</b></p>
+                <p class="shortText">acamlated.com is my portfolio website, used to showcase my various projects. </p>
+            </div>
+        </div>
+
+        <div id="project7" onclick="openProjectDetails(document.getElementById('project7Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class3 class5">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/Tenants.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>Tenants</b></p>
+                <p class="shortText">Tenants is a 2D point and click game where players work as a security guard, and have
+                to distinguish between real tenants of an apartment and their doppelgangers trying to get in. </p>
+            </div>
+        </div>
+
+        <div id="project8" onclick="openProjectDetails(document.getElementById('project8Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class3 class5">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/Idle Idling.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>Idle Idling</b></p>
+                <p class="shortText">Idle Idling is a game where the player is supposed to stay in the game for as long as
+                possible. The player will earn points as they are idle, and they can use the points to buy upgrades to
+                help get more points. </p>
             </div>
         </div>
     </div>
@@ -159,13 +195,23 @@
     <!-- About -->
     <div id="about" class="w3-container w3-padding-large" style="margin-bottom:32px">
         <h4><b>About Me</b></h4>
-        <p>I am an aspiring third-year Games Technology(Hons) student in the University of the West of England, Bristol,
-        interested in technology and the process of developing games. During my time in university, I've learned to plan,
-        manage, and develop multiple game projects. </p>
-        <p>From a young age, I've been fascinated by video games. However, what truly excites me is the process of designing
-        and developing the mechanics of a game. I'm experienced in multiple game engines and multiple programming languages.
-        I also experienced in developing in various game platforms such as VR and mobile. My goal is to contribute to
-        the development of innovative and immersive games, particularly in the open-world RPG genre.</p>
+        <p>Hi!</p>
+        <p>I'm Calvin, an undergraduate Gameplay Programmer with experience developing games in multiple game engines.
+        I am set to graduate from the University of the West of England in 2024 with a BSc (Hons) Games Technology degree.
+        During my time in university, I've completed multiple solo and group projects using C#, C++, Python, Unity, and
+        Unreal Engine. </p>
+        <p>I have also done several personal projects in said languages and engines. I have also done several projects
+        outside of Game Development using languages such as JavaScript. With JavaScript, I've made projects like a helping
+        tool for a budget tracker in Google Sheets using Google's AppScript. I've also used it to make websites such as
+        this website interactive, adding filters and a page selector. </p>
+        <p>With all the projects I have done, I've learned how to plan, manage and develop projects. I've learned to work
+        in an agile environment, doing group scrums, and to develop using a version control system. I've also learned to
+        do, take and manage playtests. </p>
+        <p>From a young age, I've been interested in video games. However, what truly excites me is the process of designing
+        and developing the mechanics of a game. Some of my favourite games are Minecraft, Genshin Impact, Subnautica,
+        Stardew Valley, Counter-Strike, and Timberborn. My goal is to contribute to the development of innovative and
+        immersive games, particularly in the open-world RPG genre. </p>
+        <p>I'm looking to continue my career in the games industry as a Gameplay Programmer. </p>
         <div class="w3-container">
             <h4><img width="24" height="24" src="school-solid.svg" class="acamlatedMarginRight">
                 <b>University of the West of England, Bristol</b></h4>
@@ -246,7 +292,7 @@
                 <p><img width="24" height="24" src="https://img.icons8.com/color/48/indonesia.png" alt="indonesia"
                         style="margin-right: 10px">Indonesian</p>
                 <div class="w3-grey">
-                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:100%">Native%</div>
+                    <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:100%">Native</div>
                 </div>
             </div>
         </div>
@@ -542,6 +588,67 @@
                 When a platform is reset, there is also a chance for it to have a heart on it. Hearts heal the player by
                 one health. <br>
             </p>
+        </div>
+    </div>
+</div>
+
+<div id="project6Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>acamlated.com</h1>
+        </div>
+        <div class="w3-container">
+            <p>acamlated.com is my portfolio website, used to showcase my various projects. </p>
+            <p>To display my projects, some features are made in the website. The features are designed to help readers
+            to navigate through the website. </p>
+            <h4>Features</h4>
+            <p><b> - Filters</b><br>
+                To help readers navigate through the various projects, filter buttons are made for the page. each project
+                is assigned tags that it is associated with. When the filters are changed, the page will look up all the
+                projects, and finds all the projects that satisfy the current filter selections. <br>
+                <b> - Pagination</b><br>
+                To prevent the projects from overcrowding the page with information, projects are separated in multiple
+                pages. The page looks up all the projects that should be displayed with the current filters on, and puts
+                them in an array. The page then uses that array to calculate which project should be displayed on the
+                current page number. <br>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="project7Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Tenants</h1>
+        </div>
+        <div class="w3-container">
+            <p>Tenants is a 2D point and click game where players work as a security guard, and have
+                to distinguish between real tenants of an apartment and their doppelgangers trying to get in. </p>
+            <p>In this game, players can decide whether they want to let a person go inside the apartment. The player
+            can decide based on the person's appearance, items they bring, or by talking to them. The game will end if the
+            player fails to figure out who the doppelganger is. </p>
+        </div>
+    </div>
+</div>
+
+<div id="project8Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Tenants</h1>
+        </div>
+        <div class="w3-container">
+            <p>Idle Idling is a game where the player is supposed to stay in the game for as long as
+                possible. The player will earn points as they are idle, and they can use the points to buy upgrades to
+                help get more points.</p>
+            <p>In this game, the player gets points every second. Anytime, the player can prestige and use the points to
+            buy upgrades. The upgrades can help the player gain more points by increasing points gain per second or by
+            multiplying points gained. </p>
         </div>
     </div>
 </div>
