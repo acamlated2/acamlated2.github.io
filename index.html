@@ -176,6 +176,18 @@
                 help get more points. </p>
             </div>
         </div>
+
+        <div id="project9" onclick="openProjectDetails(document.getElementById('project9Modal'))" style="display: block"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay  class4 class6">
+            <div class="acamlatedScaleImg">
+                <img src="Photos/Pacman.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox">
+                <p><b>Mogu Mogu</b></p>
+                <p class="shortText">Mogu Mogu is a 2D game that is based off of <i>Pacman</i>. Players can traverse
+                through the map and collect as much pellets as possible while trying to avoid the ghost. </p>
+            </div>
+        </div>
     </div>
 
     <!-- Pagination -->
@@ -649,6 +661,32 @@
             <p>In this game, the player gets points every second. Anytime, the player can prestige and use the points to
             buy upgrades. The upgrades can help the player gain more points by increasing points gain per second or by
             multiplying points gained. </p>
+        </div>
+    </div>
+</div>
+
+<div id="project9Modal" class="modal">
+    <div class="modalContent">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="closeProjectDetails(this.parentElement.parentElement.parentElement)"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Mogu Mogu</h1>
+        </div>
+        <div class="w3-container">
+            <p>Mogu Mogu is a 2D game that is based off of <i>Pacman</i>. Players can traverse
+                through the map and collect as much pellets as possible while trying to avoid the ghost. </p>
+            <p>In this game, players can choose between which maps to play on, and try to clear the map by collecting the
+            pellets. Players and ghost move through a pre-made grid map and chase each other. </p>
+            <p><b> - Grid</b><br>
+                The map is made using a tilemap. Each tile is tagged with the index of its column and row position. The
+                type of the tile is then determined by the tilemap and is then used by the player and the ghosts to
+                calculate their movements. <br>
+                <b> - Ghosts</b><br>
+                To traverse through the map, the ghost moves with a semi-random direction. Everytime the ghost enters a
+                new tile, it will figure out which direction it can go to by looking at the neighbouring tiles. Using the
+                neighbouring tiles information, the ghost moves to a random neighbouring tile. The ghost cannot move
+                towards the previous tile unless they hit a dead end. <br>
+            </p>
         </div>
     </div>
 </div>
