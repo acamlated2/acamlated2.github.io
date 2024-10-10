@@ -26,9 +26,9 @@
         <h4><b>Calvin Oktavialdy Setia</b></h4>
     </div>
     <div class="w3-bar-block">
-        <a onclick="goTo(document.getElementById('portfolio'))" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+        <a onclick="goTo(document.getElementById('projects'))" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a>
         <a onclick="goTo(document.getElementById('skills'))" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>SKILLS</a>
-        <a onclick="goTo(document.getElementById('connect'))" class="w3-bar-item w3-button w3-padding"><i class="fa fa-link fa-fw w3-margin-right"></i>CONNECT TO ME</a>
+        <a onclick="goTo(document.getElementById('programs'))" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>TOOLS & PROGRAMS</a>
     </div>
     <div class="w3-panel w3-large">
         <a href="https://github.com/acamlated2" target="_blank"><i class="fa fa-github hoverScale"></i></a>
@@ -43,14 +43,13 @@
 <div class="w3-main" style="margin-left:300px">
 
     <!-- Header -->
-    <header id="portfolio">
+    <header id="projects">
         <a href="#"><img src="acamlated-White-Background.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
         <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="openSidebar()"><i class="fa fa-bars"></i></span>
         <div class="w3-container">
             <h1><b>Calvin Oktavialdy Setia</b></h1>
             <div style="padding-bottom: 16px" class="w3-section w3-bottombar">
                 <h4><b>Projects</b></h4>
-                <!--<span class="w3-margin-right">Filter:</span>-->
                 <button id="filterButton0" onclick="selectFilter(Filters.All)" class="w3-button w3-black" style="display: none">ALL</button>
                 <div class="w3-dropdown-hover">
                     <button class="w3-button w3-theme">Filters:  <i class="fa fa-caret-down"></i></button>
@@ -381,58 +380,114 @@
     </div>
 
     <!-- Skills-->
+    <div class="w3-container">
+        <h4 id="skills"><b>Skills</b></h4>
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container">
+                <p><b><i class="fa fa-gears fa-fw acamlatedMarginRight w3-large"></i> Game Engines</b></p>
+                <p>Unity</p>
+                <div class="w3-grey roundButton">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center roundButton" style="width:85%">85%</div>
+                </div>
+                <p>SFML</p>
+                <div class="w3-grey roundButton">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center roundButton" style="width:70%">70%</div>
+                </div>
+                <p>Unreal Engine</p>
+                <div class="w3-grey roundButton">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center roundButton" style="width:60%">60%</div>
+                </div>
+            </div>
 
-    <h4 id="skills">Skills</h4>
-    <div class="w3-row-padding">
-        <div class="w3-third w3-container">
-            <p><b><i class="fa fa-gears fa-fw acamlatedMarginRight w3-large"></i> Game Engines</b></p>
-            <p>Unity</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+            <div class="w3-third w3-container acamlatedMarginBottom">
+                <p><b><i class="fa fa-code fa-fw acamlatedMarginRight w3-large"></i> Programming & Scripting Languages</b></p>
+                <p>C#</p>
+                <div class="w3-grey roundButton">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center roundButton" style="width:80%">80%</div>
+                </div>
+                <p>C++</p>
+                <div class="w3-grey roundButton">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center roundButton" style="width:70%">70%</div>
+                </div>
+                <p>JavaScript</p>
+                <div class="w3-grey roundButton">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center roundButton" style="width:60%">60%</div>
+                </div>
             </div>
-            <p>SFML</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70%</div>
-            </div>
-            <p>Unreal Engine</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:60%">60%</div>
+
+            <div class="w3-third w3-container acamlatedMarginBottom">
+                <p><b><i class="fa fa-globe fa-fw acamlatedMarginRight"></i>Languages</b></p>
+                <p><img width="24" height="24" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"
+                        style="margin-right: 10px">English</p>
+                <div class="w3-grey roundButton">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center roundButton" style="width:77%">IELTS Band 7</div>
+                </div>
+                <p><img width="24" height="24" src="https://img.icons8.com/color/48/indonesia.png" alt="indonesia"
+                        style="margin-right: 10px">Indonesian</p>
+                <div class="w3-grey roundButton">
+                    <div class="w3-container w3-dark-grey w3-padding w3-center roundButton" style="width:100%">Native</div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="w3-third w3-container acamlatedMarginBottom">
-            <p><b><i class="fa fa-code fa-fw acamlatedMarginRight w3-large"></i> Programming & Scripting Languages</b></p>
-            <p>C#</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    <!--Programs I've Used-->
+    <div class="w3-container">
+        <h4 id="programs"><b> Tools & Programs</b></h4>
+        <div class="w3-row-padding">
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                href="https://unity.com/" target="_blank">Unity</a>
             </div>
-            <p>C++</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70%</div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                href="https://www.unrealengine.com/" target="_blank">Unreal Engine 5</a>
             </div>
-            <p>JavaScript</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:60%">60%</div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://www.sfml-dev.org/" target="_blank">SFML</a>
             </div>
-        </div>
-
-        <div class="w3-third w3-container acamlatedMarginBottom">
-            <p><b><i class="fa fa-globe fa-fw acamlatedMarginRight"></i>Languages</b></p>
-            <p><img width="24" height="24" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"
-                    style="margin-right: 10px">English</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:77%">IELTS Band 7</div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://developer.android.com/studio" target="_blank">Android Studio</a>
             </div>
-            <p><img width="24" height="24" src="https://img.icons8.com/color/48/indonesia.png" alt="indonesia"
-                    style="margin-right: 10px">Indonesian</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:100%">Native</div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://www.jetbrains.com/clion/" target="_blank">CLion</a>
+            </div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://www.jetbrains.com/rider/" target="_blank">Rider</a>
+            </div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>
+            </div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a>
+            </div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://www.clipstudio.net/" target="_blank">Clip Studio Paint</a>
+            </div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://ephtracy.github.io/" target="_blank">MagicaVoxel</a>
+            </div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://www.adobe.com/id_en/products/photoshop.html" target="_blank">Adobe Photoshop</a>
+            </div>
+            <div class="w3-quarter" style="margin-top: 5px; margin-bottom: 5px">
+                <a class="w3-btn w3-dark-grey w3-hover-light-grey"style="font-weight:900; min-width:200px; border-radius: 10px"
+                   href="https://www.adobe.com/id_en/products/illustrator.html" target="_blank">Adobe Illustrator</a>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer style="margin: auto; text-align: center" class="w3-container w3-dark-grey">
+    <footer style="text-align: center; margin-top: 10px" class="w3-container w3-dark-grey">
         <div>
             <p>Find Me</p>
             <a href="https://github.com/acamlated2" target="_blank"><i class="fa fa-github hoverScale"></i></a>
@@ -455,12 +510,13 @@
         </div>
         <div class="w3-container">
             <div class="acamlatedContainer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/IN_MXhfk0n8?si=Kumyj0pbhBmSZk_w"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/129WlZOuI6k?si=8SE37iYpOYDnMXr2"
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
                         encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>
 
             </div>
+            <iframe class="steam" src="https://store.steampowered.com/widget/3093600/" frameborder="0" width="646" height="190"></iframe>
             <p>Project ZipZap is a single-player, isometric, movement focused game where the player uses different
                 dash abilities to fight groups of enemies, and to traverse the environment, with the ability to chain
                 different dashes together to cause unique interactions.</p>
@@ -469,6 +525,8 @@
             <p>We decided to split the task by their aspects from the game, and assign each person to an aspect of the
                 game. This allows each of us to fully understand an aspect of the game and reduce the time of trying to
                 understand someone else's work for the task assigned to us.</p>
+            <p> This game has been shortlisted on TIGA's 2024 education game of the year award, and Aesthetica Short Film
+                Festival's 2024 game of the year award. </p>
             <h4>Role</h4>
             <p>In this project, I mainly took the lead on designing and implementing the enemy encounters. This included:</p>
             <h6>Enemy Design</h6>
@@ -485,8 +543,6 @@
                 - Increased player engagement by balancing arenas, keeping game flow, and controlling arena difficulty level. <br>
                 - Improved player's retention by creating a satisfying challenge curve. Shown by player's willingness to keep trying when they failed a level multiple times. <br>
                 - Created enemy types that are memorable and easily distinguishable from each other.</p>
-            <a href="https://studio4point8.itch.io/project-zipzap" target="_blank" class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom  roundButton">
-                <i class="fa fa-download w3-margin-right"></i>Download</a>
         </div>
     </div>
 </div>

@@ -1,6 +1,5 @@
 .acamlatedContainer
 {
-
     position: relative;
     width: 100%;
     height: 0;
@@ -283,4 +282,31 @@
 .roundButton
 {
     border-radius: 30px
+}
+
+.steamContainer
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.steamContainer iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.steam
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
 }
