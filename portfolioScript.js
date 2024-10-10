@@ -14,7 +14,7 @@ function openSidebar()
     document.getElementById("overlay").style.display = "block";
     setTimeout(function() {
         sidebar.classList.remove("animateInFromLeft");
-    }, 400);
+    }, 300);
 }
 
 function closeSidebar()
@@ -32,7 +32,7 @@ function closeSidebar()
     setTimeout(function() {
         sidebar.style.display = "none";
         sidebar.classList.remove("animateOutToLeft");
-    }, 400);
+    }, 200);
 }
 
 function openProjectDetails(detailElement)
@@ -44,7 +44,7 @@ function openProjectDetails(detailElement)
     document.getElementById("overlay").style.zIndex = "3";
     setTimeout(function() {
         detailElement.classList.remove("animateZoomIn");
-    }, 600);
+    }, 300);
 }
 
 function closeProjectDetails(detailElement)
@@ -56,7 +56,7 @@ function closeProjectDetails(detailElement)
         detailElement.style.display = "none";
         detailElement.classList.remove("animateZoomOut");
         document.getElementById("overlay").style.zIndex = "2";
-    }, 600);
+    }, 200);
 }
 
 function openOverlay()
@@ -67,7 +67,7 @@ function openOverlay()
     overlay.classList.add("animateOpacityIn");
     setTimeout(function() {
         overlay.classList.remove("animateOpacityIn");
-    }, 600);
+    }, 300);
 }
 
 function closeOverlay()
@@ -78,7 +78,7 @@ function closeOverlay()
     setTimeout(function() {
         overlay.style.display = "none";
         overlay.classList.remove("animateOpacityOut");
-    }, 600);
+    }, 200);
 }
 
 function closeEverything()
@@ -132,7 +132,7 @@ function openPage(pageNumber)
         pageElement.classList.add("animateOpacityIn");
         setTimeout(function() {
             pageElement.classList.remove("animateOpacityIn");
-        }, 600);
+        }, 300);
     }
 }
 
@@ -156,7 +156,7 @@ function closePage(pageNumber)
         setTimeout(function() {
             pageElement.style.display = "none";
             pageElement.classList.remove("animateOpacityOut");
-        }, 600);
+        }, 300);
     }
 }
 
@@ -204,6 +204,7 @@ function selectFilter(filter)
         for (let i = 0; i < filters.length; i++)
         {
             let buttonElement = document.getElementById("filterButton" + i);
+            let buttonCloseElement = document.getElementById("filterButtonClose" + i);
 
             if (i === Filters.All)
             {
@@ -215,7 +216,8 @@ function selectFilter(filter)
             filters[i] = false;
 
             buttonElement.classList.add("w3-white");
-            buttonElement.classList.remove("w3-black");
+            buttonElement.classList.remove("w3-grey");
+            buttonCloseElement.style.display = "none";
         }
         previousFilter = Filters.All;
 
@@ -232,22 +234,25 @@ function selectFilter(filter)
             filters[i] = false;
             let buttonElement = document.getElementById("filterButton" + i);
             buttonElement.classList.add("w3-white");
-            buttonElement.classList.remove("w3-black");
+            buttonElement.classList.remove("w3-grey");
         }
     }
 
     filters[filter] = !filters[filter];
 
     let buttonElement = document.getElementById("filterButton" + filter);
+    let buttonCloseElement = document.getElementById("filterButtonClose" + filter);
     if (filters[filter])
     {
-        buttonElement.classList.add("w3-black");
+        buttonElement.classList.add("w3-grey");
         buttonElement.classList.remove("w3-white");
+        buttonCloseElement.style.display = "block";
     }
     else
     {
         buttonElement.classList.add("w3-white");
-        buttonElement.classList.remove("w3-black");
+        buttonElement.classList.remove("w3-grey");
+        buttonCloseElement.style.display = "none";
     }
 
     previousFilter = filter;
@@ -270,7 +275,7 @@ function selectFilter(filter)
     {
         filters[0] = true;
         let buttonElementAll = document.getElementById("filterButton0");
-        buttonElementAll.classList.add("w3-black");
+        buttonElementAll.classList.add("w3-grey");
         buttonElementAll.classList.remove("w3-white");
         previousFilter = Filters.All;
     }
@@ -432,3 +437,19 @@ function copyEmailToClipboard()
 {
     navigator.clipboard.writeText("calvinsetia@gmail.com");
 }
+
+function autoOpenProjectDetails()
+{
+    const projectIndex = localStorage.getItem('projectIndex');
+
+    if (!projectIndex)
+    {
+        return;
+    }
+
+    openProjectDetails(document.getElementById('project' + projectIndex + 'Modal'));
+
+    localStorage.removeItem('projectIndex');
+}
+
+document.addEventListener('DOMContentLoaded', autoOpenProjectDetails)
