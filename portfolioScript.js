@@ -118,8 +118,8 @@ function openPage(pageNumber)
     let pageNumberButtonString = "page" + pageNumber + "Button";
     let pageNumberButton = document.getElementById(pageNumberButtonString);
 
-    pageNumberButton.classList.remove("w3-hover-black");
-    pageNumberButton.classList.add("w3-black");
+    pageNumberButton.classList.add("grayButton");
+    pageNumberButton.classList.remove("w3-white");
 
     for (let pageElement of pageElements)
     {
@@ -142,8 +142,8 @@ function closePage(pageNumber)
     let pageNumberButtonString = "page" + pageNumber + "Button";
     let pageNumberButton = document.getElementById(pageNumberButtonString);
 
-    pageNumberButton.classList.remove("w3-black");
-    pageNumberButton.classList.add("w3-hover-black");
+    pageNumberButton.classList.remove("grayButton");
+    pageNumberButton.classList.add("w3-white");
 
     for (let pageElement of pageElements)
     {
