@@ -123,6 +123,18 @@
             </div>
         </div>
 
+        <div id="project21" onclick="openProjectDetails(document.getElementById('project1Modal'))" style="display: none; border-radius: 15px"
+             class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class3 class5">
+            <div class="acamlatedScaleImg" style="border-radius: 15px 15px 0 0">
+                <img src="Photos/Turn-Based Tower Defense.png">
+            </div>
+            <div class="w3-container w3-white shortTextBox" style="border-radius: 0 0 15px 15px">
+                <p><b>Creep</b></p>
+                <p class="shortText">Creep is a personal project of mine, which is a turn-based tower defense game. In this game,
+                players have to strategise and defend against waves of enemies, using different towers in a turn-based mode combat. </p>
+            </div>
+        </div>
+
         <div id="project1" onclick="openProjectDetails(document.getElementById('project1Modal'))" style="display: block; border-radius: 15px"
              class="w3-third w3-container acamlatedMarginBottom w3-hover-opacity clickable project shouldDisplay class1 class3 class4 class5">
             <div class="acamlatedScaleImg" style="border-radius: 15px 15px 0 0">
@@ -1195,6 +1207,46 @@
                     take the data from the calendar, and try to put it in the current month's sheet. The program will look up
                     for an empty row in the sheet, and put all the data on the empty row. <br>
                 </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="project21Modal" class="modal">
+        <div class="modalContent">
+            <div class="w3-container">
+                <div class="w3-bottombar">
+                    <h1>Creep
+                        <a onclick="closeProjectDetails(this.parentElement.parentElement.parentElement.parentElement.parentElement)"
+                           class="w3-padding" style="position:absolute; right: 10px; top: 5px"><i class="fa fa-remove hoverScale"></i>
+                        </a>
+                    </h1>
+                </div>
+            </div>
+            <div class="w3-container" style="margin-top: 10px">
+                <div class="acamlatedContainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/h5Z9Us0sBhU?si=v3rfSo5-e-IVZrts"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                </div>
+                <p>Creep is a personal project of mine, which is a turn-based tower defense game. In this game,
+                    players have to strategise and defend against waves of enemies, using different towers in a turn-based mode combat. </p>
+                <p>In this game, players can try to defend from waves of enemies using towers, in a grid based map. In the tower's
+                    turn, players can choose to upgrade, evolve, or attack using the towers. If they were to attack, they would then have to
+                    choose which enemy to attack within the tower's range. This allows players to focus attacking on stronger enemies,
+                    to hold out powerful attacks to stronger enemies, or hold AOE attacks to groups of enemies. </p>
+                <h4>Maps</h4>
+                Every time the game starts, the player would be given a randomly generated map, giving the player a different experience
+                every time they play the game. The map is based on a grid of blocks, and obstacles would be randomly placed on the blocks,
+                forcing the enemy to find a path to the player. Some enemies and the player can break the obstacles, allowing the enemies
+                to find a better path, or forcing the enemies to find move within a more desirable path.
+                <h4>Enemies</h4>
+                The game would have different kinds of enemies to make the combat experience more interesting. With the
+                exception of the most basic enemies, every type of enemies would have at least one feature that would give them
+                am edge against the player. For example, one enemy would be able to move two blocks at once, making them twice as
+                fast as other enemies. Another example would be an enemy that would charge for one turn, then dashes until they reach the
+                end of a straight path on the next turn, making them extremely fast on straight paths, and extremely slow on paths with
+                a lot of turns.
             </div>
         </div>
     </div>

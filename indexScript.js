@@ -20,3 +20,8 @@ function openPortfolioWithDetails(projectIndex)
 
     window.location.href = "portfolio.html";
 }
+
+function downloadCV()
+{
+    window.open('Downloads/Calvin OktavialdySetia - CV.pdf', '_blank');
+}
